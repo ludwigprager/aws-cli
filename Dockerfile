@@ -11,6 +11,5 @@ RUN apk --no-cache update && \
     rm -rf /var/cache/apk/*
 
 RUN mkdir /root/.aws
-ADD misc/aws.config /root/.aws/config
 RUN chmod 600 /root/.aws
 RUN chown root:root /root/.aws
