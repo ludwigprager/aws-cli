@@ -2,7 +2,11 @@
 
 # 1. Adding your credentials
 You only need your **Access Key ID** and **Secret Access Key**.
-In the root directory of this git repository type
+If you didn't check out the git repository type
+~~~
+mkdir -p aws/
+~~~
+To add your credentials type
 ~~~
 docker run -ti --rm --name aws-cli \
 	-v $(pwd)/aws/:/root/.aws/ \
